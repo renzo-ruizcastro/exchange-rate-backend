@@ -1,5 +1,5 @@
 # Exchange rate: Backend
-Exchange rate: Frontend: https://github.com/renzo-ruizcastro/exchange-rate-backend <br>
+Exchange rate: Frontend: https://github.com/renzo-ruizcastro/exchange-rate-frontend <br>
 ## Usage
 ### General
 Install Node.js: https://nodejs.org/en/download/ <br>
