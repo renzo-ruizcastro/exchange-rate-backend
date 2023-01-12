@@ -18,7 +18,7 @@ const exchangeSchema = sequelize.define(
       allowNull: false,
     },
     rate: {
-      type: DataTypes.DECIMAL(10, 2),
+      type: DataTypes.DECIMAL(10, 4),
       allowNull: false,
     },
   },
