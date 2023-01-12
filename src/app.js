@@ -1,5 +1,6 @@
 const express = require('express');
 const morganBody = require('morgan-body');
+const cors = require('cors');
 
 const app = express();
 
@@ -7,6 +8,7 @@ const userRouter = require('./routes/userRoutes');
 const exchangeRouter = require('./routes/exchangeRoutes');
 const auditRouter = require('./routes/auditRoutes');
 
+app.use(cors());
 app.use(express.json());
 morganBody(app);
 
