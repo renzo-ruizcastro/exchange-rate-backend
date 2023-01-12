@@ -1,8 +1,8 @@
 const express = require('express');
-const morgan = require('morgan');
+const morganBody = require('morgan-body');
 
 const app = express();
-app.use(morgan('combined'));
 app.use(express.json());
+morganBody(app);
 
 module.exports = app;
