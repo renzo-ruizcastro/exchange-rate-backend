@@ -5,8 +5,9 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "set NODE_ENV=development&&npx nodemon src/server.js",
-    "start:prod": "set NODE_ENV=production&&npx nodemon src/server.js"
+    "dev": "set NODE_ENV=development&&npx nodemon src/server.js",
+    "start": "set NODE_ENV=development&&npx node src/server.js",
+    "start:prod": "set NODE_ENV=production&&npx node src/server.js"
   },
   "keywords": [],
   "author": "",

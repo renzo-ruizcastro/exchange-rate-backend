@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize');
 
-const DB_PASS = process.argv[2] || process.env.DB_PASS;
+const DB_PASS = process.env.DB_PASS || process.argv[2];
 
 const sequelize = new Sequelize(
   process.env.DB_NAME,
@@ -19,7 +19,5 @@ const sequelize = new Sequelize(
     },
   }
 );
-
-
 
 module.exports = sequelize;
