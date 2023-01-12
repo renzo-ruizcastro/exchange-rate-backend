@@ -1,8 +1,12 @@
 const { Router } = require('express');
+const auditController = require('../controllers/auditController');
 
 const router = Router();
 
-router.route('/').get().post();
-router.route('/:id').get();
+router
+  .route('/')
+  .get(auditController.getAllAudits)
+  .post(auditController.createAudit);
+router.route('/:id').get(auditController.getAudit);
 
 module.exports = router;
