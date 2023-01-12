@@ -12,12 +12,10 @@ const exchangeSchema = sequelize.define(
     from: {
       type: DataTypes.STRING,
       allowNull: false,
-      primaryKey: true,
     },
     to: {
       type: DataTypes.STRING,
       allowNull: false,
-      primaryKey: true,
     },
     rate: {
       type: DataTypes.DECIMAL(10, 2),

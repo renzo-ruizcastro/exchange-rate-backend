@@ -18,9 +18,9 @@ const userSchema = sequelize.define(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    rol: {
+    role: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      defaultValue: 0,
     },
   },
   {
