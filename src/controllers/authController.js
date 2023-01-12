@@ -21,6 +21,7 @@ exports.signUp = async (req, res) => {
         user: {
           id: user.id,
           username: user.username,
+          role: user.role,
         },
       },
     });
@@ -55,6 +56,7 @@ exports.login = async (req, res) => {
         user: {
           id: user.id,
           username: user.username,
+          role: user.role,
         },
       },
     });
