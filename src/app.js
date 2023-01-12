@@ -20,6 +20,6 @@ app.use((req, res, next) => {
 
 app.use('/api/v1/exchanges', exchangeRouter);
 app.use('/api/v1/users', userRouter);
-app.use('/api/v1/audit', auditRouter);
+app.use('/api/v1/audits', auditRouter);
 
 module.exports = app;
